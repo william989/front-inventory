@@ -47,6 +47,14 @@ export class CategoryService {
 
   }
 
+  /**
+   * update categorie
+   */
+  getCategorieById(id: any){
+    const endpoint = `${base_url}/categories/${id}`;
+    return this.http.get(endpoint);
+
+  }
 
 }
 
